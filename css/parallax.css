@@ -1,0 +1,147 @@
+
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	
+	.center{
+		text-align: center;
+	}	
+	
+	/*This is for the background in the parallax effect*/
+	.parallax-target{
+		min-height: 1000px;
+		top: 100px;
+		width:100%;
+		margin-top: -10px;
+		background: transparent;	
+	}
+	
+	.parallax-targetHome{
+		min-height: 1000px;
+		top: 100px;
+		width:100%;
+		margin-top: -10px;
+		background: transparent;	
+	}
+	
+	@media (max-width: 820px) and (min-width: 425px){
+		.parallax-targetHome{
+		min-height: 700px;	
+	}
+	}
+	
+	@media screen and (max-width: 425px){
+		.parallax-targetHome{
+			min-height: 500px;	
+		}
+	}
+	
+	.parallax-targetContact{
+		min-height: 400px;
+		top: 100px;
+		width:100%;
+		background: transparent;	
+	}
+	
+	.targetServices{
+		min-height: 700px;	
+	}
+	/*This is the division which moves over the wallpaper*/
+	.middle{
+		min-height: 360px;
+		position:absolute;
+		height: 400px;
+		margin-left:0;
+		margin-right:0;
+		margin-top: -18px;
+		width: 100%;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: 300;
+		background:none;
+		background-color: #3F5185;
+		color: #fff;		
+	}
+	
+	@media screen and (max-width: 1024px){
+		.middle{
+			height: auto;		
+		}
+	}
+	
+	.backgroundOne{
+		min-height: 1000px;
+		margin-top: -15px;
+		width: 100%;
+		background:rgba(192,0,3,1.00);
+	}
+	
+	.backgroundTwo{
+		min-height: 1000px;
+		width: 100%;
+		background:rgba(192,0,3,1.00);
+		margin-top: -50px;
+	}
+	
+	.backgroundThree{
+		min-height: 700px;
+		margin-top: -15px;
+		width: 100%;
+		background:rgba(192,0,3,1.00);
+	}
+	
+	#backgroundOneID{
+		background: url(../images/image1.jpg);
+		background-attachment:fixed;
+		background-size:cover;
+	}
+	
+	#backgroundTwoID{
+		background: url(../images/image2.jpg);
+		background-attachment:fixed;
+		background-size:cover;	
+	}
+	
+	#backgroundThreeID{
+		background: url(../images/image1.jpg);
+		background-attachment:fixed;
+		background-size:cover;	
+	}
+	
+	/*@media screen and (max-width: 1025px){
+		.middle{
+			min-height: 280px;	
+		}
+	}*/
+	
+	/*This makes background scollable up the background when the viewport adjustes to the tablet or mobile*/
+	@media screen and (max-width: 725px){
+		#backgroundOneID{
+			background-attachment: scroll;
+		}
+	}
+	
+	@media screen and (max-width: 725px){
+		#backgroundTwoID{
+			background-attachment: scroll;
+			background-repeat:no-repeat;
+			position: relative;
+		}
+	}
+	
+	@media (max-width: 820px) and (min-width: 425px){
+		.backgroundOne{
+			min-height:700px;	
+		}
+	}
+	
+	@media screen and (max-width: 425px){
+		.backgroundOne{
+			min-height: 500px;	
+		}
+	}
+	
+	
+	
+
+	

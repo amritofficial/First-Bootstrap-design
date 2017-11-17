@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;	
+}
+
+.col-centered{
+	float:none;
+	margin: 0 auto;	
+}
+
+.col-centered{
+	float:none;
+	margin: auto;	
+}
+
+.pcontent{
+	position:absolute;
+	margin:auto;
+	text-align:center;
+}
+.panel{
+	margin-top: -700px;
+	z-index: 10000;		
+}
+
+</style>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/parallax.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/panel.css">
+  <!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
+  <link rel="stylesheet" type="text/css" href="css/jquery-responsiveGallery.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/services.css">
+<title>FineTouchConstructionUsingBootstrap</title>
+</head>
+
+<body data-spy="scroll">
+
+<!--This is the navigation bar that will contain the fixed css pattern-->
+<header id="homeSection">
+<nav class="navbar navbar-default">
+	<div class="container">
+    	<div class="row">
+        </div>
+    </div>
+</nav><br><br>
+
+<!--This is the actual navigation bar that contain the text and has no background color-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<!--<div class="row"> -->
+        <div class="navbar-header">
+     		 <button type="button" 
+                  data-toggle="collapse"
+                  class="navbar-toggle collapsed"
+                  data-target="#collapsemenu"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+    	     </button>
+     		 <a href="#" class="navbar-brand animated bounceInDown">
+       		 Fine Touch Constructions
+    	     </a>
+        </div>
+       <div class="collapse navbar-collapse" id="collapsemenu">
+           	 <ul id="tags" class="nav navbar-nav">
+            	<li><a id="home" class="active" href="#homeSection">Home</a></li>
+                <li><a id="about" href="#aboutSection">About Us</a></li>
+                <li><a id="services" href="#servicesSection">Services</a></li>
+                <li><a id="gallery" href="#gallerySection">Gallery</a></li>
+                <li><a id="contact" href="#contactSection">Contact Us</a></li>
+             </ul>
+       </div>  
+	    <!--</div> -->
+	</div>
+</nav>    
+</header>
+<!--This is the navigation bar that serves as a background for navigator text options when the page reaches top-->
+<nav id="topBackground" class="navbar navbar-fixed-top">
+	<div class="container">
+    	<div class="row">
+        </div>
+    </div>
+</nav>
+<!--
+<div id="image1" class="parallax-target section-1" data-parallax="scroll" data-image-src="images/image1.jpg"></div>
+<div class="middle section-2"></div>
+
+<div id="image1" class="parallax-target section-1" data-parallax="scroll" data-image-src="images/image2.jpg"></div>
+<div class="middle section-2"></div>
+
+<div id="image1" class="parallax-target section-1" data-parallax="scroll" data-image-src="images/image3.jpg"></div>
+<div class="middle section-2"></div>
+-->
+<div class="blackBacground">
+    <div class="container">
+        <p class="home_text">
+            <span class="glyphicon glyphicon-home"></span><br>We Are Always<br>Open <span class="glyphicon glyphicon-calendar"></span>
+        </p>
+        <div class="buttonIconDiv">
+        	<button type="button" class="buttonIcon" data-toggle="modal" data-target="#cont"><p>ContactUs</p></button>
+        </div>
+        
+        <div class="modal fade" id="cont" 
+            
+            role="dialog" 
+            aria-labelledby="modalLabel">
+        	<div class="modal-dialog" role="document">
+            	<div class="modal-content">
+                	<div class="modal-header">
+                    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        	<span aria-hidden="true">&times;</span>
+                        </button>
+                    	<h3 class="modal-title" id="modalLabel">This is Modal</h3>
+                    </div><!--modal-header-->
+                	<div class="modal-body">
+                    <h4 class="modalAddress">9 SaddleCreek Court<br>Brampton<br>l6R1L8</h4><br>
+                        <form>
+                            <div class="form-group">
+                                <label for="inputName" class="sr-only">Name</label>
+                                <input class="form-control" id="inputName" type="text" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input class="form-control" type="text" id="inputEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                            	<label for="companyName">Company</label>
+                            	<input class="form-control" type="text" id="companyName" placeholder="CompanyName">
+                            </div>
+                            
+                            <div class="form-group">
+                            	<label for="message">Message</label>
+                                <textarea class="form-control" id="message"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                            	<button class="btn btn-success" role="button">Submit</button>
+                            </div>
+                        	
+                        </form>                        
+                    </div><!--modal-body-->
+                </div><!--modal-content-->
+            </div><!--modal-dialog-->
+        </div><!--modal-->
+        
+    </div><!--container--> 
+</div><!--blackBackground-->
+
+<!--<div class="wrapper">
+    <div class="scroller">
+        <div class="backgroundOne" id="backgroundOneID" data-stellar-background-ratio="0.1">
+        </div>
+    </div>
+</div>-->
+<div id="image1" class="parallax-targetHome section-1" data-parallax="scroll" data-image-src="images/image1.jpg"></div>
+ <div class="middle section-2"></div>
+<!--
+<div class="container">	
+        <div class="row">
+            <section class="col-lg-4 col-sm-6 col-xs-6 col-centered pcontent"><!--"col-lg-4 col-lg-push-1 col-md-4 col-md-6 col-sm-5 col-centered"--><!--
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" src="images/new/image1.jpeg" alt="Mission">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="images/new/image2.jpg" alt="Mission">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="images/new/image3.jpg" alt="Mission">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+</div>-->
+<div class="container">
+<div class="w-gallery">
+  <section id="responsiveGallery-container" class="responsiveGallery-container">
+   <a class="responsiveGallery-btn responsiveGallery-btn_prev" href="javascript:void(0);"></a> 
+   <a class="responsiveGallery-btn responsiveGallery-btn_next" href="javascript:void(0);"></a>
+    <ul class="responsiveGallery-wrapper">
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="assets/pics/0.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">Google</h2>
+          <h3 class="responsivGallery-position">www.google.com</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="assets/pics/1.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">Facebook</h2>
+          <h3 class="responsivGallery-position">www.facebook.com</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="assets/pics/2.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">Twitter</h2>
+          <h3 class="responsivGallery-position">www.twitter.com</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="assets/pics/3.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">jQuery</h2>
+          <h3 class="responsivGallery-position">www.jquery.com</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="assets/pics/4.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">jQuery UI</h2>
+          <h3 class="responsivGallery-position">www.jqueryui.com</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="assets/pics/5.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">W3C</h2>
+          <h3 class="responsivGallery-position">www.w3c.org</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="assets/pics/6.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">Github</h2>
+          <h3 class="responsivGallery-position">www.github.com</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="assets/pics/7.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">Linkedin</h2>
+          <h3 class="responsivGallery-position">www.linkedin.com</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="assets/pics/8.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">Tumblr</h2>
+          <h3 class="responsivGallery-position">www.tumblr.net</h3>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+</div>
+<!--
+<div class="container">
+    <div class="row">
+        <section class="col-xs-12">		<!--col-md-12 col-md-offset-2 col-lg-6 col-xs-12--><!--
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="about_header">FINE TOUCH CONSTRUCTIONS</h3>
+            </div>
+                <div class="panel-body">
+                     <p class="about_para">Dr. Winthrop is the guatdian of Missy, a three year old Lllaso mix who is adopted at the shelter. Dr. Winthrop is passionate about spray and neuter and pet adoption, and works tireless hours outside the clinic, performing free spray and neuter surgeries for the shelter</p>                  
+                </div>
+        </div>
+        </section>
+    </div>
+</div>
+-->
+<div id="aboutSection">
+    <!--<div class="backgroundTwo" id="backgroundTwoID" data-stellar-background-ratio="0.1">
+    </div>-->
+    <div id="image2" class="parallax-target section-1" data-parallax="scroll" data-image-src="images/image3.jpg"></div>
+</div>
+
+<div class="container">
+	<div class="row">
+    	<div class="col-lg-12 col-centered pcontent">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+                	<h1 class="about_header">This is to test the panel</h1>
+                </div>
+                <div class="panel-body">
+                	<p class="about_para">This is some random shit to see that the panel is reponsive or not</p>
+                </div>
+            </div>
+    	</div>
+    </div>
+</div>
+
+<div id="servicesSection">
+	<div id="image4" class="parallax-target targetServices" data-parallax="scroll" data-image-src="images/image7.jpg"></div>
+    <div class="services container">
+    	<div class="row">
+        	<section class="col-sm-6 col-mid-3 col-lg-3">
+            	<!--<a href="#" class="thumbnail"><img class="img-responsive servicesImages" src="images/services/newhomes.jpg"><h3>New Homes</h3></a>-->
+                <div class="blackCover img-responsive">
+                    <div class="project">
+                        <div class="project_card">
+                            <a href="" class="project_image"><img class="img-responsive servicesImages" src="images/services/newhomes.jpg" alt=""></a>
+                            <div class="project_detail">
+                                <h2 class="project_title"><a href="#">New Homes</a></h2>
+                                <small class="project_category"><a href="#"></a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="serviceText">Refine and create your dreams into reality</p>
+                </div>
+                
+            </section>
+            
+            <section class="col-sm-6 col-mid-3 col-lg-3">
+            	<!--<a href="#" class="thumbnail"><img class="img-responsive servicesImages" src="images/services/homeRenovation.jpg"><h3>Home Renovations</h3></a>-->
+                <div class="blackCover img-responsive">
+                    <div class="project">
+                        <div class="project_card">
+                            <a href="" class="project_image"><img class="img-responsive servicesImages" src="images/services/homeRenovation.jpg" alt=""></a>
+                            <div class="project_detail">
+                                <h2 class="project_title"><a href="#">Home Renovations</a></h2>
+                                <small class="project_category"><a href="#"></a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="serviceText">Refine and recreate your memories with professionality and preservation</p>
+                </div>
+            </section>
+            
+            <section class="col-sm-6 col-mid-3 col-lg-3">
+            	<!--<a href="#" class="thumbnail"><img class="img-responsive servicesImages" src="images/services/homeRemodelling.jpg"><h3>Home Remodelling</h3></a>-->
+                <div class="blackCover img-responsive">
+                    <div class="project">
+                        <div class="project_card">
+                            <a href="" class="project_image"><img class="img-responsive servicesImages" src="images/services/homeRemodelling.jpg" alt=""></a>
+                            <div class="project_detail">
+                                <h2 class="project_title"><a href="#">Home ReModelling</a></h2>
+                                <small class="project_category"><a href="#"></a></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="col-sm-6 col-mid-3 col-lg-3">
+            	<!--<a href="#" class="thumbnail"><img class="img-responsive servicesImages" src="images/services/homeRemodelling.jpg"><h3>Home Restoration</h3></a>-->
+                <div class="blackCover img-responsive">
+                    <div class="project">
+                        <div class="project_card">
+                            <a href="" class="project_image"><img class="img-responsive servicesImages" src="images/services/homeRemodelling.jpg" alt=""></a>
+                            <div class="project_detail">
+                                <h2 class="project_title"><a href="#">Home Restorations</a></h2>
+                                <small class="project_category"><a href="#"></a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="serviceText">Refine and create your dreams into reality</p>
+                </div>
+            </section>
+        </div>
+    </div>    
+</div>
+
+<div id="gallerySection">
+	<div id="image5" class="parallax-target targetServices" data-parallax="scroll" data-image-src="images/image8.jpg"></div>
+</div>
+
+<div id="contactSection">
+    <div id="image3" class="parallax-targetContact" data-parallax="scroll" data-image-src="images/image1.jpg"></div>
+    <!--<div class="backgroundThree" id="backgroundThreeID" data-stellar-background-ratio="0.1">
+    </div>-->
+</div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.responsiveGallery.js"></script>
+<script src="js/stellarScript.js"></script>
+<script type="text/javascript" src="lib/modernizr.custom.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/jquery.hover3d.js"></script>
+
+<script type="text/javascript">
+$(function(){
+		if(navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)){
+			$('#ios-notice').removeClass('hidden');
+			$('.parallax-container').height( $(window).height() * 0.5 | 0);	
+		} else{
+			$(window).resize(function(){
+				var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+				$('.parallax-container').height(parallaxHeight);
+			}).trigger('resize');
+		}
+		
+	});
+	
+
+
+
+$(".project").hover3d({
+	selector:".project_card",
+	shine: true,
+});
+
+	$(".project").hover3d({
+		
+		selector:null,
+		
+		perspective:1000,
+		
+		sensitivity:20,
+		
+		invert:false,
+		
+		shine:false,
+		
+		hoverInClass:"hover-in",
+		
+		hoverOutClass:"hover-out",
+		
+		hoverClass:"hover-3d" 
+		
+	});
+		
+</script> 
+</body>
+</html>

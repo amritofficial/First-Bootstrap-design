@@ -1,0 +1,39 @@
+.img-responsive{
+  margin: 0 auto;
+  display: block;
+}
+
+.services section {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.services{
+	margin-top: -500px;	
+}
+
+.servicesImages{
+	max-width: 260px;
+	max-height: 200px;
+	display:block;
+}
+
+.btnCenter{
+	position: relative;
+	text-align:center;	
+}
+
+.blackCover{
+	padding-left:14px;
+	padding-top: 10px;
+	background-color:rgba(0,0,0,0.50);
+	height: 340px;
+	width: 320px;	
+}
+
+.serviceText{
+	color: white;
+	padding-top: 10px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size:16px;	
+}

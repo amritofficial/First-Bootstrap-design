@@ -1,0 +1,107 @@
+/*.carousel_images{
+	height: 320px;
+	width: 240px;
+	
+}
+
+.over{
+	position:absolute; 
+	margin:0;
+	padding:0;		
+}
+
+.carousel_position{
+	position:absolute;	
+	text-align:center;
+	margin-top: -40px;
+}
+
+.carousel_div{
+	position:absolute;
+	text-align:center;
+	margin: 0;
+	padding:0;	
+}
+
+.car_content{
+	margin:0 auto;
+	text-align:center;
+	padding-left: 20px;
+}
+
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+	max-width: 280px;
+    height: 260px;
+	border:2px solid rgba(0,251,255,0.72);
+}
+
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    min-width: 240px;
+    height: 260;
+}
+.carousel{
+	margin-top: -400px;	
+	float:none;
+}
+
+.col-centered{
+	float:none;
+	margin: 0 auto;	
+}
+
+.col-centered{
+	float:none;
+	margin: auto;	
+}*/
+/*
+@media only screen and (min-width: 768px) {
+	.car_content{
+		margin-left: 380px;	
+	}
+}
+
+@media screen and (min-width: 1440px){
+	.car_content{
+		margin-left: 420px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.car_content{
+		margin-left: 460px;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.car_content{
+		margin-left: 300px;
+	}
+}*/
+
+@media screen and (max-width: 768px){
+	.car_content{
+	margin:0 auto;
+	text-align:center;
+	line-height:1;
+	padding-left: 10em;
+	padding-right:10em;
+	}
+}
+
+
+
+
+	.responsiveGallery-container{
+	margin-top: 60px;	
+}	
+
+
+/*@media screen and (max-width: 1025px){
+	.responsiveGallery-container{
+	margin-top: -420px;	
+}	
+}*/
